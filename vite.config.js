@@ -6,12 +6,5 @@ export default defineConfig({
   base : '/',
 
   plugins: [react()],
-  // 2. server의 proxy 설정
-  // 5172 port -> 8088 port
-  // Cross-orgin 간주하고 이를 차단! CORS
-  server : {
-    proxy : {
-      '/api' : 'http://43.201.30.191:8088'
-    }
-  }
+
 })
